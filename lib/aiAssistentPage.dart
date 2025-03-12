@@ -115,7 +115,8 @@ class AiAssistantPageState extends State<AiAssistantPage> {
           "Content-Type": "application/json"
         },
         body: jsonEncode({
-          "model": "gpt-3.5-turbo", // Specify the model you want to use
+          // "model": "gpt-3.5-turbo", 
+          "model": "deepseek/deepseek-r1:free", 
           "messages": messages,
         }),
       );
