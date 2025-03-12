@@ -111,12 +111,11 @@ class AiAssistantPageState extends State<AiAssistantPage> {
       final response = await http.post(
         url,
         headers: {
-          "Authorization": "Bearer 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", // Your OpenRouter API Key
+          "Authorization": "Bearer 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", // Your OpenRouter API Key
           "Content-Type": "application/json"
         },
         body: jsonEncode({
-          // "model": "gpt-3.5-turbo", 
-          "model": "deepseek/deepseek-r1:free", 
+          "model": "gpt-3.5-turbo", 
           "messages": messages,
         }),
       );
